@@ -1,4 +1,4 @@
-import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import {  FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import type { SelectChangeEvent } from "@mui/material";
 import { useCommentContext } from "../context/CommentContext";
 
@@ -12,7 +12,6 @@ const SortControls = () => {
   };
 
   return (
-    <Box display="flex" justifyContent="flex-end" mb={2}>
       <FormControl size="small" sx={{ minWidth: 150, ml: "auto" }}>
         <InputLabel>Sort By</InputLabel>
         <Select value={sortType} label="Sort By" onChange={handleChange}>
@@ -22,7 +21,6 @@ const SortControls = () => {
           <MenuItem value="least-score">Least Score</MenuItem>
         </Select>
       </FormControl>
-    </Box>
   );
 };
 
