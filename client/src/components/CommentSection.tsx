@@ -1,5 +1,7 @@
 import { Box, Typography, Divider, Paper } from "@mui/material";
 import CommentForm from "./CommentForm";
+import SortControls from "./SortControls";
+
 
 const CommentSection = () => {
 
@@ -13,11 +15,11 @@ const CommentSection = () => {
           Comments
         </Typography>
 
+        <SortControls />
 
         <Divider sx={{ my: 2 }} />
 
         <CommentForm parentId={null} />
-
       </Paper>
     </Box>
   );
