@@ -1,7 +1,8 @@
+import CommentSection from "./components/CommentSection"
 
 const App = () => {
   return (
-    <div>App</div>
+    <CommentSection />
   )
 }
 
